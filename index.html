@@ -1,0 +1,10 @@
+- hosts: demo
+  user : anisble 
+  connection : ssh
+  become : yes 
+  ports: 8080
+     
+
+   task 
+     - name : yum install httpd 
+       action : yum =httpd state= present 
